@@ -1,0 +1,440 @@
+.cbp-so-scroller {
+	margin-top: 3em;
+	overflow: hidden;
+}
+
+.cbp-so-section {
+	margin-bottom: 5em;
+}
+
+/* Clear floats of children */
+.cbp-so-section:before,
+.cbp-so-section:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-section:after {
+	clear: both;
+}
+
+/* Text styling */
+.cbp-so-section h2 {
+	font-size: 48px;
+	float: left;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.cbp-so-section p {
+	font-size: 2em;
+	text-indent: 2em;
+	float: left;
+	font-weight: 300;
+}
+
+/* Sides */
+.cbp-so-side {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 3em 4%;
+	overflow: hidden;
+	min-height: 12em;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Clear floats of children */
+.cbp-so-side:before,
+.cbp-so-side:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-side:after {
+	clear: both;
+}
+
+.cbp-so-side-right {
+	text-align: left;
+	float: right;
+
+}
+
+.cbp-so-side-left {
+	text-align: left;
+}
+
+.cbp-so-side-right img {
+	float: right;
+	max-width: 45%;
+	margin-right: 25%;
+}
+
+.cbp-so-side-left img {
+	float: left;
+	max-width:45%;
+	margin-left: 25%;
+}
+
+.cbp-so-side-left h2{
+	font-size: 40px;
+	float: left;
+	font-weight: 300;
+	line-height: 1;
+	margin-left: 80px;
+}
+.cbp-so-side-left p{
+	font-size: 20px;
+	text-indent: 2em;
+	float: left;
+	line-height: 1.5em;
+	font-weight: 300;
+	margin-left: 80px;
+	color: rgba(56, 56, 56, 0.69);
+
+}
+.cbp-so-side-right h2{
+	font-size: 40px;
+	float: left;
+	font-weight: 300;
+	line-height: 1;
+	margin-left: 80px;
+}
+.cbp-so-side-right p{
+	font-size: 20px;
+	text-indent: 2em;
+	float: left;
+	line-height: 1.5em;
+	font-weight: 300;
+	margin-left: 80px;
+	color: rgba(56, 56, 56, 0.69);
+
+}
+@media screen and (max-width: 768px){
+	.cbp-so-scroller {
+		margin-top: 3em;
+		overflow: hidden;
+	}
+
+	.cbp-so-section {
+		margin-bottom: 5em;
+	}
+
+	/* Clear floats of children */
+	.cbp-so-section:before,
+	.cbp-so-section:after {
+		content: " ";
+		display: table;
+	}
+
+	.cbp-so-section:after {
+		clear: both;
+	}
+
+	/* Text styling */
+	.cbp-so-section h2 {
+		font-size: 20px;
+		float: left;
+		font-weight: 300;
+		line-height: 1;
+	}
+
+	.cbp-so-section p {
+		font-size: 1em;
+		text-indent: 2em;
+		float: left;
+		font-weight: 300;
+	}
+
+	/* Sides */
+	.cbp-so-side {
+		width: 50%;
+		float: left;
+		margin: 0;
+		padding: 3em 4%;
+		overflow: hidden;
+		min-height: 12em;
+		-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+		-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+		transition: transform 0.5s, opacity 0.5s;
+	}
+
+	/* Clear floats of children */
+	.cbp-so-side:before,
+	.cbp-so-side:after {
+		content: " ";
+		display: table;
+	}
+
+	.cbp-so-side:after {
+		clear: both;
+	}
+
+	.cbp-so-side-right {
+		text-align: left;
+		float: right;
+
+	}
+
+	.cbp-so-side-left {
+		text-align: left;
+	}
+
+	.cbp-so-side-right img {
+		float: right;
+		max-width: 45%;
+		margin-right: 25%;
+	}
+
+	.cbp-so-side-left img {
+		float: left;
+		max-width:45%;
+		margin-left: 25%;
+	}
+
+	.cbp-so-side-left h2{
+		font-size: 20px;
+		float: left;
+		font-weight: 300;
+		line-height: 1;
+		margin-left: 50px;
+	}
+	.cbp-so-side-left p{
+		font-size: 14px;
+		text-indent: 2em;
+		float: left;
+		line-height: 1.5em;
+		font-weight: 300;
+		margin-left: 10px;
+		color: rgba(56, 56, 56, 0.69);
+
+	}
+	.cbp-so-side-right h2{
+		font-size: 20px;
+		float: left;
+		font-weight: 300;
+		line-height: 1;
+		margin-left: 50px;
+	}
+	.cbp-so-side-right p{
+		font-size: 14px;
+		text-indent: 2em;
+		float: left;
+		line-height: 1.5em;
+		font-weight: 300;
+		margin-left: 10px;
+		color: rgba(56, 56, 56, 0.69);
+
+	}
+}
+/* Initial state (hidden or anything else) */
+.cbp-so-init .cbp-so-side {
+	opacity: 0;
+}
+
+.cbp-so-init .cbp-so-side-left {
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.cbp-so-init .cbp-so-side-right {
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+/* For example, add a delay for the right side:
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+*/
+
+/* Example media queries */
+
+@media screen and (max-width: 73.5em) {
+	.cbp-so-scroller {
+		font-size: 65%;
+	}
+
+	.cbp-so-section h2 {
+		margin: 0;
+	}
+
+	/*.cbp-so-side img {*/
+		/*max-width: 50%;*/
+	/*}*/
+}
+
+@media screen and (max-width: 41.125em) {
+	.cbp-so-side {
+		float: none;
+		width: 100%;
+	}
+
+
+}
+
+
+.cbp-hrmenu {
+	width: 100%;
+	margin-top: 2em;
+
+}
+
+/* general ul style */
+.cbp-hrmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* first level ul style */
+.cbp-hrmenu > ul,
+.cbp-hrmenu .cbp-hrsub-inner {
+	width: 90%;
+	max-width: 70em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+.cbp-hrmenu > ul > li {
+	display: inline-block;
+}
+
+.cbp-hrmenu > ul > li > a {
+	font-weight: 700;
+	text-decoration: none;
+	padding: 1em 2em;
+	color: #000000;
+	display: inline-block;
+}
+
+.cbp-hrmenu > ul > li > a:hover {
+	color: #47a3da;
+}
+
+.cbp-hrmenu > ul > li.cbp-hropen a,
+.cbp-hrmenu > ul > li.cbp-hropen > a:hover {
+	color: #ffffff;
+	background: #47a3da;
+}
+
+/* sub-menu */
+.cbp-hrmenu .cbp-hrsub {
+	display: none;
+	position: fixed;
+	background: #47a3da;
+	width: 100%;
+	left: 0;
+}
+
+.cbp-hropen .cbp-hrsub {
+	display: block;
+	padding-bottom: 3em;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div {
+	width: 33%;
+	float: left;
+	padding: 0 2em 0;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:before,
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	clear: both;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div a {
+	line-height: 2em;
+}
+
+.cbp-hrsub h4 {
+	color: #afdefa;
+	padding: 2em 0 0.6em;
+	margin: 0;
+	font-size: 160%;
+	font-weight: 300;
+}
+
+/* Examples for media queries */
+
+@media screen and (max-width: 52.75em) {
+
+	.cbp-hrmenu {
+		font-size: 80%;
+	}
+
+}
+
+@media screen and (max-width: 43em) {
+
+	.cbp-hrmenu {
+		font-size: 120%;
+		border: none;
+	}
+
+	.cbp-hrmenu > ul,
+	.cbp-hrmenu .cbp-hrsub-inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	.cbp-hrmenu .cbp-hrsub-inner {
+		padding: 0 2em;
+		font-size: 75%;
+	}
+
+	.cbp-hrmenu > ul > li {
+		display: block;
+		border-bottom: 4px solid #47a3da;
+	}
+
+	.cbp-hrmenu > ul > li > a {
+		display: block;
+		padding: 1em 3em;
+	}
+
+	.cbp-hrmenu .cbp-hrsub {
+		position: relative;
+	}
+
+	.cbp-hrsub h4 {
+		padding-top: 0.6em;
+	}
+
+}
+
+@media screen and (max-width: 36em) {
+	.cbp-hrmenu .cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0 2em;
+	}
+}
+
+
+
+
+
+
